@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+}
+
+h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+	max-width: 500px;
+}
+
+h3{
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; 
+  margin: 0 auto; 
+  width: 80%; 
+}
+
+.container{
+	max-width: 1000px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER */ 
+
+header{
+	background: #000;
+	
+}
+
+.header-flex{
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+
+.logo{
+	width: 200px;
+}
+
+.logo img{
+	max-width: 100%;
+	display: block;
+}
+
+.nav-menu{
+	list-style: none;
+	display: flex;
+	gap: 40px;
+} 
+
+.nav-menu a{ 
+	text-decoration: none;
+	color:  #fae40b;
+	transition: 0.3s;
+}
+
+.nav-menu a:hover{
+	color: white;
+	cursor: pointer;
+}
+
+
+.burger{
+	display: none;
+}
+
+.fa-bars{
+	font-size: 30px;
+}
+
+
+/*Section 1*/
+
+.location{
+	background-image: url(https://cdn.pixabay.com/photo/2024/04/08/15/00/food-photo-8683703_1280.jpg);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-blend-mode: overlay; 
+	background-size: cover;
+	background-position: center;
+	padding: 200px 0px;
+	text-align:left;
+	color: white;
+}
+
+.input-box{
+	margin-bottom: 10px;
+}
+
+.input-box label{
+	display: inline-block;
+	width: 120px;
+	font-weight: bold;
+}
+
+.input-box input{
+	width: 300px;
+	padding: 8px;
+	border: 1px solid #ccc;
+  	border-radius: 5px;
+}
+
+.btn{
+	padding: 10px 20px;
+	background-color: #fae40b;
+	color: black;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #AEA003;
+}
+
+/*section2*/
+
+.Category{
+	padding: 40px;
+}
+
+.parent-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	justify-content: center;
+}
+.card{
+	background: lightgrey;
+	border: 1px solid lightgrey;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.card:hover{
+	opacity: 30%;
+}
+
+.flex{
+	display: flex;
+	gap: 10px;
+}
+
+.card h5{
+	font-size: 20px;
+}
+
+.card img{
+	height: 100px;
+}
+
+/*banner3*/
+
+.restaurants{
+	padding: 30px 0px;
+}
+
+.grid2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px 24px;
+	justify-content: center;
+}
+
+
+.flex2{
+	display: flex;
+	gap: 10px;
+}
+
+.bloc{
+	padding: 10px 20px;
+	transition: 0.4s;
+}
+
+.bloc:hover{
+	opacity: 50%;
+}
+
+.left img {
+    width: 200px; /* Set the width */
+    height: 130px; /* Set the height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.right h4{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.right p{
+	font-size: 16px;
+	color: #9B9B9B;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px){
+
+	.menu-holder{
+		display: none;
+	}
+
+	.burger{
+		display: block;
+	}
+}
